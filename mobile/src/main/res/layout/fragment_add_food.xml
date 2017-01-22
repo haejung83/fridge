@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brightGray"
+    tools:context="haejung.com.fridge.ui.addfood.AddFoodFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeImageFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/img_food_placeholder" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewSeparate1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeImageFood"
+        android:background="#22000000" />
+
+    <RelativeLayout
+        android:id="@+id/relativeValidation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeNameQuantity"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_color_states_white"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingEnd="@dimen/common_horizontal_padding"
+        android:paddingStart="@dimen/common_horizontal_padding"
+        android:paddingTop="@dimen/common_vertical_padding">
+
+        <TextView
+            android:id="@+id/textValidationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:text="@string/title_add_input_validation" />
+
+        <ImageView
+            android:id="@+id/imageValidationArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <TextView
+            android:id="@+id/textValidationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/textValidationTitle"
+            android:layout_toStartOf="@id/imageValidationArrow"
+            android:gravity="end"
+            android:includeFontPadding="false"
+            android:text="2017/01/01" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeStoragePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeValidation"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_color_states_white"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingEnd="@dimen/common_horizontal_padding"
+        android:paddingStart="@dimen/common_horizontal_padding"
+        android:paddingTop="@dimen/common_vertical_padding"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textStoragePeriodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:text="@string/title_add_input_storage_period" />
+
+        <ImageView
+            android:id="@+id/imageStoragePeriodArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <TextView
+            android:id="@+id/textStoragePeriodDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/textStoragePeriodTitle"
+            android:layout_toStartOf="@id/imageStoragePeriodArrow"
+            android:gravity="end"
+            android:includeFontPadding="false"
+            android:text="2017/01/01" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeStoragePeriod"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingEnd="@dimen/common_horizontal_padding"
+        android:paddingStart="@dimen/common_horizontal_padding"
+        android:paddingTop="@dimen/common_vertical_padding">
+
+        <TextView
+            android:id="@+id/textMemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/title_add_memo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textMemo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="@string/hint_memo"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="4"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeNameQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewSeparate1"
+        android:background="#FFFFFF"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingEnd="@dimen/common_horizontal_padding"
+        android:paddingStart="@dimen/common_horizontal_padding"
+        android:paddingTop="@dimen/common_vertical_padding">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/title_add_name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/textName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/textName"
+            android:layout_toEndOf="@id/textName"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="@string/hint_name"
+            android:maxLines="1"
+            android:textSize="14sp" />
+
+
+        <View
+            android:id="@+id/viewSeparate2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textName"
+            android:layout_marginBottom="@dimen/common_vertical_margin"
+            android:layout_marginTop="@dimen/common_vertical_margin"
+            android:background="#22000000" />
+
+        <TextView
+            android:id="@+id/textQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/viewSeparate2"
+            android:text="@string/title_add_quantity" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

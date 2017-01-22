@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">냉장고</string>
+
+    <!-- tabs -->
+    <string name="tab_cold">냉장실</string>
+    <string name="tab_frozen">냉동실</string>
+    <string name="tab_etc">기타</string>
+    <string name="tab_keep">장보기</string>
+
+    <string name="sort_by_name">이름 순</string>
+    <string name="sort_by_date">신선도 낮은 순</string>
+
+    <string name="btn_add_food">식료품 추가</string>
+    <string name="btn_add_keep">추가 항목 등록</string>
+
+    <string name="title_date_best_before">유통기한</string>
+    <string name="title_date_registration">등록일</string>
+
+    <string name="title_navigation_cold">냉장실 식품 추가</string>
+    <string name="title_navigation_frozen">냉동실 식품 추가</string>
+    <string name="title_navigation_done">완료</string>
+    <string name="title_navigation_save">저장</string>
+
+    <string name="title_add_name">이름</string>
+    <string name="title_add_quantity">수량</string>
+    <string name="title_add_input_validation">유통기한 입력</string>
+    <string name="title_add_input_storage_period">보관기간 설정</string>
+    <string name="title_add_memo">메모</string>
+
+    <string name="title_storage_period_a_week">1주일</string>
+    <string name="title_storage_period_a_month">한 달</string>
+    <string name="title_storage_period_six_months">6개월</string>
+    <string name="title_storage_period_a_year">1년</string>
+
+    <string name="title_date_notification">알림</string>
+    <string name="title_date_day_today">당일</string>
+    <string name="title_date_day_1_day_left">1일 전</string>
+    <string name="title_date_day_3_days_left">3일 전</string>
+    <string name="title_date_day_5_days_left">5일 전</string>
+
+    <string name="hint_name">이름을 입력하세요</string>
+    <string name="hint_memo">메모를 입력하세요</string>
+</resources>

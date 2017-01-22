@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    tools:context="haejung.com.fridge.ui.addfood.DateSelectionFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_group">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
+
+        <RadioGroup
+            android:visibility="visible"
+            android:id="@+id/radioGroupDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RadioButton
+                android:id="@+id/radioDateType1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_storage_period_a_week" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding" />
+
+            <RadioButton
+                android:id="@+id/radioDateType2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_storage_period_a_month" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding" />
+
+            <RadioButton
+                android:id="@+id/radioDateType3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_storage_period_six_months"
+                android:checked="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding" />
+
+            <RadioButton
+                android:id="@+id/radioDateType4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_storage_period_a_year" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeDate"
+        android:layout_marginTop="20dp"
+        android:background="@color/bg_group"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingEnd="@dimen/common_horizontal_padding"
+        android:paddingStart="@dimen/common_horizontal_padding"
+        android:paddingTop="@dimen/common_vertical_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_date_notification" />
+
+        <ToggleButton
+            android:id="@+id/toggleNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeNotificationDaySelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeNotification"
+        android:layout_marginTop="19dp"
+        android:background="@color/bg_group">
+
+        <RadioGroup
+            android:id="@+id/radioGroupNotificationDaySelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:id="@+id/radioDay0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_date_day_today" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding" />
+
+            <RadioButton
+                android:id="@+id/radioDay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_date_day_1_day_left" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding" />
+
+            <RadioButton
+                android:id="@+id/radioDay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_date_day_3_days_left"
+                android:checked="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#22000000"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding" />
+
+            <RadioButton
+                android:id="@+id/radioDay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_color_states_white"
+                android:button="@null"
+                android:drawableRight="?android:attr/textCheckMark"
+                android:paddingEnd="@dimen/common_horizontal_padding"
+                android:paddingStart="@dimen/common_horizontal_padding"
+                android:text="@string/title_date_day_5_days_left" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</RelativeLayout>

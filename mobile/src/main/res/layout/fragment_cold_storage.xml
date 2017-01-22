@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="haejung.com.fridge.ui.list.ColdStorageFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeSortContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/brightGray"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingTop="@dimen/common_vertical_padding">
+
+        <TextView
+            android:id="@+id/textListSortByTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/common_horizontal_margin"
+            android:text="@string/sort_by_name" />
+
+        <TextView
+            android:id="@+id/textListSortByDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/common_horizontal_margin"
+            android:layout_toEndOf="@id/textListSortByTitle"
+            android:text="@string/sort_by_date" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/brightGray"
+        android:paddingBottom="@dimen/common_vertical_padding"
+        android:paddingEnd="@dimen/common_vertical_padding"
+        android:paddingStart="@dimen/common_vertical_padding"
+        android:paddingTop="@dimen/common_vertical_padding">
+
+        <Button
+            android:id="@+id/btnAddFood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_add_food" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relativeBottomContainer"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/relativeSortContainer">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

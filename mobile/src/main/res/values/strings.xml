@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Fridge</string>
+
+    <!-- tabs -->
+    <string name="tab_cold">Cold</string>
+    <string name="tab_frozen">Frozen</string>
+    <string name="tab_etc">ETC</string>
+    <string name="tab_keep">Keep</string>
+
+    <string-array name="tabs">
+        <item>@string/tab_cold</item>
+        <item>@string/tab_frozen</item>
+        <item>@string/tab_etc</item>
+        <item>@string/tab_keep</item>
+    </string-array>
+
+    <string name="sort_by_name">By name</string>
+    <string name="sort_by_date">By fresh</string>
+
+    <string name="btn_add_food">Add</string>
+    <string name="btn_add_keep">Add</string>
+
+    <string name="title_date_best_before">Best Before</string>
+    <string name="title_date_registration">Registration</string>
+
+    <string name="title_navigation_cold">Add food</string>
+    <string name="title_navigation_frozen">Add food</string>
+    <string name="title_navigation_done">Done</string>
+    <string name="title_navigation_save">Save</string>
+
+    <string name="title_add_name">Name</string>
+    <string name="title_add_quantity">Quantity</string>
+    <string name="title_add_input_validation">Input Validation</string>
+    <string name="title_add_input_storage_period">Input Storage Period</string>
+    <string name="title_add_memo">Memo</string>
+
+    <string name="title_storage_period_a_week">A week</string>
+    <string name="title_storage_period_a_month">A month</string>
+    <string name="title_storage_period_six_months">Six months</string>
+    <string name="title_storage_period_a_year">A year</string>
+
+    <string name="title_date_notification">Notification</string>
+    <string name="title_date_day_today">Today</string>
+    <string name="title_date_day_1_day_left">1day left</string>
+    <string name="title_date_day_3_days_left">3days left</string>
+    <string name="title_date_day_5_days_left">5days left</string>
+
+    <string name="hint_name">Input Name</string>
+    <string name="hint_memo">Input Memo</string>
+
+</resources>
